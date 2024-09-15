@@ -1,13 +1,15 @@
 import { initializeApp } from 'firebase/app';
 import { getAuth, signInWithRedirect, signInWithPopup, GoogleAuthProvider } from 'firebase/auth'
 
+const PE = process.env;
+
 const firebaseConfig = {
-  apiKey: REACT_APP_APIKEY,
-  authDomain: REACT_APP_AUTHDOMAIN,
-  projectId: REACT_APP_PROJECTID,
-  storageBucket: REACT_APP_STORAGEBUCKET,
-  messagingSenderId: REACT_APP_MESSAGINGSENDERID,
-  appId: REACT_APP_APPID
+  apiKey: PE.REACT_APP_APIKEY,
+  authDomain: PE.REACT_APP_AUTHDOMAIN,
+  projectId: PE.REACT_APP_PROJECTID,
+  storageBucket: PE.REACT_APP_STORAGEBUCKET,
+  messagingSenderId: PE.REACT_APP_MESSAGINGSENDERID,
+  appId: PE.REACT_APP_APPID
 };
 
 // Initialize Firebase
