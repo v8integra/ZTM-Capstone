@@ -2,12 +2,12 @@ import { initializeApp } from 'firebase/app';
 import { getAuth, signInWithRedirect, signInWithPopup, GoogleAuthProvider } from 'firebase/auth'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBmTJBwQLuZJynTzbZ1b_OLOgAc5PEyTOY",
-  authDomain: "crwn-shop-db-44c21.firebaseapp.com",
-  projectId: "crwn-shop-db-44c21",
-  storageBucket: "crwn-shop-db-44c21.appspot.com",
-  messagingSenderId: "1002685030762",
-  appId: "1:1002685030762:web:3df8efb3c1eced1446c513"
+  apiKey: REACT_APP_APIKEY,
+  authDomain: REACT_APP_AUTHDOMAIN,
+  projectId: REACT_APP_PROJECTID,
+  storageBucket: REACT_APP_STORAGEBUCKET,
+  messagingSenderId: REACT_APP_MESSAGINGSENDERID,
+  appId: REACT_APP_APPID
 };
 
 // Initialize Firebase
